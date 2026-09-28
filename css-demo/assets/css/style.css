@@ -1,3 +1,9 @@
+/* #1B1326 */
+/* #0D1940 */
+/* #2561D9 */
+/* #27498C */
+/* #52B5F2 */
+
 /* ---------------Box Sizing----------------- */
 html {
   box-sizing: border-box;
@@ -19,4 +25,20 @@ html {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+
+/*--------Global Styles---------*/
+
+body{
+  font-family: "Libertinus Sans", sans-serif;
+  margin:0;
+}
+
+header.primary{
+  background-color:#0D1940;
+  color:white;
+  text-align: center;
+  text-shadow: 1px 1px #000000;
+
 }
