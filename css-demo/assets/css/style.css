@@ -27,6 +27,12 @@ html {
   width: 1px;
 }
 
+/*--------Global Styles---------*/
+.container{
+  width:80vw;
+  max-width:992px;
+  margin:40px auto;
+}
 
 /*--------Global Styles---------*/
 
@@ -68,7 +74,7 @@ header.primary p.subtitle{
   letter-spacing: -.2px;
 }
 
-header.primary nav{
+header.primary nav.container{
  
 }
 
@@ -82,6 +88,8 @@ header.primary nav ul{
 
 header.primary nav ul li{
  list-style-type:none;
+ margin-bottom:10px;
+ flex:1;
 }
 
 header.primary nav ul li a{
@@ -91,3 +99,40 @@ header.primary nav ul li a{
   border-radius: 20px 40px;
   border: 2px solid #0D1940
 }
+
+header.primary nav ul li a:hover{
+  background-color: rgba(0,0,0,.7)
+}
+
+#content h2{
+  color:#0D1940;
+  border-bottom:1px solid #2561D9
+}
+
+#content p{
+  line-height:1.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------- Media Queries --------------------*/
+
+@media scren and (max-width:500px){
+
+header.primary nav ul{
+ flex-direction:column;
+ gap: 5px;
+}
+}
+
+
+
