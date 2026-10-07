@@ -27,11 +27,15 @@ html {
   width: 1px;
 }
 
-/*--------Global Styles---------*/
+/*--------Utility Styles---------*/
 .container{
   width:80vw;
   max-width:992px;
   margin:40px auto;
+}
+
+img{
+  max-width: 100%;
 }
 
 /*--------Global Styles---------*/
@@ -104,7 +108,7 @@ header.primary nav ul li a:hover{
   background-color: rgba(0,0,0,.7)
 }
 
-#content h2{
+#content h2, #blog h2{
   color:#0D1940;
   border-bottom:1px solid #2561D9
 }
@@ -113,9 +117,60 @@ header.primary nav ul li a:hover{
   line-height:1.8;
 }
 
+#blog{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:15px;
+}
+
+#blog h2{
+  flex: 0 0 100%;
+}
 
 
 
+#blog article{
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  padding: 10px;
+  font-size: .9px;
+  flex:1;
+}
+
+figure{
+  margin:0;
+}
+
+#blog article time,
+ #blog figcaption{
+  text-transform: uppercase;
+  font-size:.9rem;
+}
+
+#blog a{
+  color:#27498C
+}
+
+aside[aria-label="Sidebar"]{
+  background-color: #0D1940;
+  color: #fff;
+  padding: 40px 0;
+}
+aside div.container{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:40px;
+}
+
+aside .container a{
+  color:#2561D9;
+}
+
+article.widget footer{
+  display:none;
+}
 
 
 
@@ -132,6 +187,11 @@ header.primary nav ul{
  flex-direction:column;
  gap: 5px;
 }
+
+#blog h2{
+  text-align:center;
+}
+
 }
 
 
