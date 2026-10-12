@@ -38,6 +38,28 @@ img{
   max-width: 100%;
 }
 
+.img-right{
+  float:right;
+  border:1px solid #cccccc;
+  padding:5px;
+  margin: 10px 0 10px 20px;
+}
+.img-left{
+   float:left;
+  border:1px solid #cccccc;
+  padding:5px;
+  margin: 10px 20px 10px 0;
+}
+.img-center{
+  display:block;
+  border:1px solid #cccccc;
+  padding:5px;
+  margin:20px auto;
+}
+
+
+
+
 /*--------Global Styles---------*/
 
 body{
@@ -108,7 +130,7 @@ header.primary nav ul li a:hover{
   background-color: rgba(0,0,0,.7)
 }
 
-#content h2, #blog h2{
+#content h2, #blog h2, #practice h2{
   color:#0D1940;
   border-bottom:1px solid #2561D9
 }
@@ -123,6 +145,10 @@ header.primary nav ul li a:hover{
   justify-content:space-between;
   flex-wrap:wrap;
   gap:15px;
+  border-top: 4px double #cccccc;
+  border-bottom: 4px double #cccccc;
+  margin:20px 0;
+  padding:30px 0 35px 0;
 }
 
 #blog h2{
@@ -152,6 +178,46 @@ figure{
   color:#27498C
 }
 
+#practice a:link, #practice a:visited{
+  color:#2561D9;
+}
+
+#practice h3{
+  border-left: 7.5px solid #27498C;
+  padding: 7.5px;
+}
+
+table{
+  width:100%;
+  border:1px solid #cccccc;
+  border-collapse: collapse;
+}
+table caption{}
+tr:nth-child(odd){
+  background-color: rgba(0,0,0,.1);
+}
+th{
+   background-color: #0D1940;
+  color: #fff;
+  padding: 7px;
+}
+td{
+  border:1px solid #cccccc;
+  padding:5px;
+}
+
+td:nth-child(n+2){
+  text-align: right;
+}
+
+tr:hover{
+  background-color: rgba(0,0,0,.2);
+}
+
+
+
+
+
 aside[aria-label="Sidebar"]{
   background-color: #0D1940;
   color: #fff;
@@ -172,7 +238,13 @@ article.widget footer{
   display:none;
 }
 
-
+footer.primary{
+  background-color: #27498C;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px #000000;
+}
 
 
 
