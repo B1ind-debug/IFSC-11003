@@ -160,7 +160,7 @@ header.primary nav ul li a:hover{
 #blog article{
   box-shadow: 0 4px 8px rgba(0,0,0,0.4);
   padding: 10px;
-  font-size: .9px;
+  font-size: .9rem;
   flex:1;
 }
 
@@ -294,7 +294,7 @@ footer.primary{
 
 /* ------------------- Media Queries --------------------*/
 
-@media scren and (max-width:500px){
+@media screen and (max-width:500px){
 
 header.primary nav ul{
  flex-direction:column;
